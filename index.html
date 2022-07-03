@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.2.228/pdf.min.js"></script>
+    <script async="" src="/js/create_blob.js"></script> 
+    <script async="" src="/js/renderpdf.js"></script>
+    <script async="" src="/js/openpdf.js"></script>  
+    <script async="" src="/js/upload.js"></script>  
+    <script async="" src="/js/send.js"></script>    
+  </head>
+<body>
+<form>
+<input type='file' onchange='send(this);' multiple>
+<div id='log'></div>
+<canvas id='pdf-canvas'></canvas>
+</form>
+</body>
+</html>
