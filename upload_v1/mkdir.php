@@ -5,16 +5,16 @@
 
 
 $list = array();
-array_push($list, "upload_v1/");
-array_push($list, "upload_v1/files");
-array_push($list, "upload_v1/files/mp4");
-array_push($list, "upload_v1/files/pdf");
-array_push($list, "upload_v1/files/avif");
-array_push($list, "upload_v1/files/jpg");
-array_push($list, "upload_v1/files/".$extension[$type]."/".$hash);
+
+array_push($list, "files");
+array_push($list, "files/mp4");
+array_push($list, "files/pdf");
+array_push($list, "files/avif");
+array_push($list, "files/jpg");
+array_push($list, "files/".$extension[$type]."/".$dire);
 
 foreach ($list as $value) {
-  echo $value."<br>";
+
   if(!is_dir($value)){
     mkdir($value, 0777);
   }
